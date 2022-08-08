@@ -4,8 +4,6 @@ const { rejects } = require("assert");
 const { resolve } = require("path");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// TODO: Include packages needed for this application
-
 // TODO: Create an array of questions for user input
 const questions = [
   "What is the name of your project?",
@@ -15,7 +13,6 @@ const questions = [
   "Will you allow contributions(y/n)?",
   "Provide contributor guidelines",
   "Provide test data/instructions to allow user to test your project.",
-  "Would you like to add a License?",
   "Which license would you like to add?",
   "What is your GitHub username?",
   "What is the link to your GitHub profile?",
@@ -45,15 +42,9 @@ const promptUser = (UserInput) => {
         name: "usage",
         message: questions[3],
       },
-      // {
-      //   type: "confirm",
-      //   name: "confirmContributor",
-      //   message: questions[4],
-      //   default: true,
-      // },
       {
         type: "input",
-        name: "contributor",
+        name: "contribution",
         message: questions[5],
       },
       {
@@ -62,9 +53,10 @@ const promptUser = (UserInput) => {
         message: questions[6],
       },
       {
-        type: "input",
+        type: "list",
         name: "license",
         message: questions[7],
+        choices: ["MIT License", "GNU GPLv3"],
       },
       {
         type: "input",
@@ -87,14 +79,16 @@ const promptUser = (UserInput) => {
 
 // TODO: Create a function to write README file
 const writeToFile = (data) => {
-  fs.writeFile("./dist/README.md", data, (err) => {
-    if (err) {
-      rejects(err);
-      return;
-    }
-    resolve({
-      ok: true,
-      message: "File Created!",
+  return new Promise((resolve, rejects) => {
+    fs.writeFile("./dist/README.md", data, (err) => {
+      if (err) {
+        rejects(err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: "File Created!",
+      });
     });
   });
 };
