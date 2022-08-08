@@ -56,7 +56,7 @@ const promptUser = (UserInput) => {
         type: "list",
         name: "license",
         message: questions[7],
-        choices: ["MIT License", "GNU GPLv3"],
+        choices: ["MIT", "GNU GPLv3"],
       },
       {
         type: "input",
