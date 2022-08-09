@@ -15,7 +15,7 @@ const questions = [
   "Provide test data/instructions to allow user to test your project.",
   "Which license would you like to add?",
   "What is your GitHub username?",
-  "What is the link to your GitHub profile?",
+  "Provide a link to your project.",
   "Please provide an email address.",
 ];
 
@@ -26,31 +26,79 @@ const promptUser = (UserInput) => {
         type: "input",
         name: "projectName",
         message: questions[0],
+        validate: (projectNameInput) => {
+          if (projectNameInput) {
+            return true;
+          } else {
+            console.log("Please enter name of your project.");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "description",
         message: questions[1],
+        validate: (descriptionInput) => {
+          if (descriptionInput) {
+            return true;
+          } else {
+            console.log("Please enter a description of your project.");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "install",
         message: questions[2],
+        validate: (installInput) => {
+          if (installInput) {
+            return true;
+          } else {
+            console.log("Please enter installation instructions.");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "usage",
         message: questions[3],
+        validate: (inputUsage) => {
+          if (inputUsage) {
+            return true;
+          } else {
+            console.log("Please enter Usage information.");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "contribution",
         message: questions[5],
+        validate: (contributionInput) => {
+          if (contributionInput) {
+            return true;
+          } else {
+            console.log("Please add guidelines for contribution.");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "test",
         message: questions[6],
+        validate: (testInput) => {
+          if (testInput) {
+            return true;
+          } else {
+            console.log("Please provide a way for user to test your program");
+            return false;
+          }
+        },
       },
       {
         type: "list",
@@ -62,16 +110,40 @@ const promptUser = (UserInput) => {
         type: "input",
         name: "github",
         message: questions[8],
+        validate: (githubInput) => {
+          if (githubInput) {
+            return true;
+          } else {
+            console.log("Please provide your github username.");
+            return false;
+          }
+        },
       },
       {
         type: "input",
-        name: "gitLink",
+        name: "link",
         message: questions[9],
+        validate: (linkInput) => {
+          if (linkInput) {
+            return true;
+          } else {
+            console.log("Please provide a link to your project.");
+            return false;
+          }
+        },
       },
       {
         type: "input",
         name: "email",
         message: questions[10],
+        validate: (emailInput) => {
+          if (emailInput) {
+            return true;
+          } else {
+            console.log("Please provide your email.");
+            return false;
+          }
+        },
       },
     ])
     .then((userInput) => userInput);

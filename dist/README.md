@@ -1,38 +1,41 @@
-# ReadMe port [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
- 
+# SleepSpace [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-  ## Table of Contents
-    [Description](#Description)
-    [Installation](#Installation)
-    [Usage](#Usage)
-    [Contribution](#Contribution)
-    [Tests](#Tests)
-    [License](#License)
+## Table of Contents
+  
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contribution](#contribution)
+  - [Test](#test)
+  - [Questions](#questions)
+  
 
-  ## Description
+## Description
 
-   Using node.Js to generate a Readme
+Website for students who struggle with sleeping. What this project does is create a habit list after answering some questions. Based off your answers a habit list will dynamically display.
 
-  ## Installation
+## Installation
 
-   Download files via Github.com through my link below
+The project is already displayed through my github via pages.
 
-  ## Usage
+## Usage
 
-  Once installed run the command line. With node installed run node index.js....
+When you reach the website you will notice a quiz box. Answer through quiz and your habit list will display.
 
-  ## Contribution 
+## Contribution
 
-  thank you
+Fork first you would like to contribute.
 
-  ## Tests
+## Test
 
-  here is some data
+You can answer the questions in any way that you choose on the project. 
 
-  ## Questions
-  ### Github: [4Charlie4](https://github.com/4Charlie4)
-  ### Email: DuranCharles2017@gmail.com
+## Questions
 
-   ## License
-   Licensed under GNU GPLv3
+### Github: [4Charlie4](https://github.com/4Charlie4)
 
+### Email: Charlie4dev4@gmail.com
+
+## License
+
+Licensed under MIT
