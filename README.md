@@ -28,7 +28,7 @@ Fork from this if needed.
 
 ## Test
 
-To test you can use your own information and project to get a feel for it. On github some of my information will be presented in the readme you can use that if needed.
+To test you can use your own information and project to get a feel for it. On github some of my information will be presented in the readme you can use that if needed. Video of use can be found in demonstration folder.
 
 ## Contact
 
