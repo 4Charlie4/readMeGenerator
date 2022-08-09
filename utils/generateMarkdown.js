@@ -53,8 +53,9 @@ function generateMarkdown(userInput) {
   ${test}
 
   ## Questions
+
   ### Github: [${questions.github}](https://github.com/${questions.github})
-  ### [Project](${link})
+  ### [Project](${questions.link})
   ### Email: ${questions.email}
 
    ## License

@@ -1,41 +1,40 @@
 # SleepSpace [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ 
 
-## Table of Contents
-  
+  ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
   - [Test](#test)
   - [Questions](#questions)
-  
 
-## Description
+  ## Description
 
-Website for students who struggle with sleeping. What this project does is create a habit list after answering some questions. Based off your answers a habit list will dynamically display.
+   Assists users with sleep via a habit list
 
-## Installation
+  ## Installation
 
-The project is already displayed through my github via pages.
+   Project is displayed on github pages
 
-## Usage
+  ## Usage
 
-When you reach the website you will notice a quiz box. Answer through quiz and your habit list will display.
+  Answer the questions and a habit list will be displayed
 
-## Contribution
+  ## Contribution 
 
-Fork first you would like to contribute.
+  Fork it
 
-## Test
+  ## Test
 
-You can answer the questions in any way that you choose on the project. 
+  You can test it via the website and can answer the questions however you want.
 
-## Questions
+  ## Questions
 
-### Github: [4Charlie4](https://github.com/4Charlie4)
+  ### Github: [4Charlie4](https://github.com/4Charlie4)
+  ### [Project](https://4charlie4.github.io/project-sleepSpace/)
+  ### Email: Charlie4dev4@gmail.com
 
-### Email: Charlie4dev4@gmail.com
+   ## License
+   Licensed under MIT
 
-## License
-
-Licensed under MIT
